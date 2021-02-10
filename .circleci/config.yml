@@ -4,4 +4,5 @@ jobs:
     docker: 
       - image: docker.io/curlimages/curl:latest
     steps:
-      - run: curl -vv -k -6 -H 'Host: google.com' https://\[2a00:1450:400b:c01::71\]
+      - run: |
+        -vv -k -6 -H 'Host: google.com' https://\[2a00:1450:400b:c01::71\]
