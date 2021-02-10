@@ -2,6 +2,6 @@ version: 2.1
 jobs:
   build:
     docker: 
-      - image: docker.io/katiechapman/volume-test:latest
+      - image: docker.io/curlimages/curl:latest
     steps:
-      - run: mount
+      - run: curl -vv -k -6 -H 'Host: google.com' https://\[2a00:1450:400b:c01::71\]
